@@ -26,7 +26,7 @@ names(data)[5] <- "Age.Group"
 
 data[, 6] <- as.character(data[, 6])
 attributes(data)$variable.labels[6] <- "Sex"
-data[, 6] <- factor(data[, 6], levels=c("A1","A2","A3"),labels=c("Kadın","Erkek","Transgender"))
+data[, 6] <- factor(data[, 6], levels=c("A1","A2","A3"),labels=c("Female","Male","Transgender"))
 names(data)[6] <- "Sex"
 
 data[, 7] <- as.character(data[, 7])
