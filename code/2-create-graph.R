@@ -49,8 +49,8 @@ levels(as.factor(data.str$class))
 data.class2graph  <- data.str[(data.str$class=="Factor w/ 3 levels" | data.str$class=="Factor w/ 4 levels"| data.str$class=="Factor w/ 5 levels"| 
                         data.str$class=="Factor w/ 6 levels"|  data.str$class=="Factor w/ 7 levels"),]
 
-class2graph <- data.class2graph $variable
-data.single <- data[class2graph]
+class2graph <- data.class2graph$variable
+data.single <- data1[class2graph]
 
 levels(data.single$Family.Size)
 

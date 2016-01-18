@@ -26,7 +26,7 @@ names(data)[5] <- "Age.Group"
 
 data[, 6] <- as.character(data[, 6])
 attributes(data)$variable.labels[6] <- "Sex"
-data[, 6] <- factor(data[, 6], levels=c("A1","A2","A3"),labels=c("Kadın","Erkek","Transgender"))
+data[, 6] <- factor(data[, 6], levels=c("A1","A2","A3"),labels=c("Female","Male","Transgender"))
 names(data)[6] <- "Sex"
 
 data[, 7] <- as.character(data[, 7])
@@ -1169,8 +1169,7 @@ names(data)[215] <- "Location.Interview"
 # Variable name was incorrect and was changed from Question 18 - A to Question 18 _hyph_ A .
 # Variable name was incorrect and was changed from Question 18 - A_other to Question 18 _hyph_ A_other .
 
-### Save to Rdatset
-struct <- as.data.frame(str(data))
+
 
 ## Delete empty records -- using rows with empty title
 data1 <- data[!is.na(data$submitdate), ]
