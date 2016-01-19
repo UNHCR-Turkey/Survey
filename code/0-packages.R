@@ -1,7 +1,7 @@
 ################################################################
 ### Uncomment to load the packages used in this analysis
 #lab.packages <- c("lattice", "gmodels", "car","ggplot2","extrafont","ggthemes","zoo","reshape2",
-#"maptools","rgdal","rgeos","ggmap","sp","hexbin",")
+#"maptools","rgdal","rgeos","ggmap","sp",")
 #install.packages(pkgs=lab.packages)
 
 packages <- c("ggplot2", # package for elegant data visualization using the Grammar of Graphics
@@ -20,7 +20,7 @@ packages <- c("ggplot2", # package for elegant data visualization using the Gram
               "ellipse",
               "pastecs","car","XML",
               "devtools", # package used to load packages hosted in github -- install CURL before and separately
-              "plyr",
+              "plyr","hexbin",
               "vcd", # Visualisation of categorical data
               "reshape2", # package to easily melt data to long form
               "RColorBrewer", # a package offering color palette from 

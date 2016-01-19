@@ -1,3 +1,5 @@
+source("code/0-packages.R")
+
 ### Load data from Limesurvey
 data <- read.table("data/survey_91923_R_data_file.csv", sep=",", quote = "'", na.strings=c("","\"\""), stringsAsFactors=FALSE)
 
